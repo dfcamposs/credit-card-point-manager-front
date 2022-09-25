@@ -7,7 +7,7 @@ function CreditCardSelection() {
     const userCreditCards = [
         {
             "id": 1,
-            "logo": "./btgLogo.png",
+            "logo": "./assets/btgLogo.png",
             "userId": "595.080.896-84",
             "bankId": "69665991-da55-4aac-a1f2-32d23daba8fe",
             "bankName": "Btg Pactual",
@@ -18,7 +18,7 @@ function CreditCardSelection() {
         },
         {
             "id": 2,
-            "logo": "./btgLogo.png",
+            "logo": "./assets/btgLogo.png",
             "userId": "595.080.896-84",
             "bankId": "69665991-da55-4aac-a1f2-32d23daba8fe",
             "bankName": "Btg Pactual",
@@ -29,7 +29,7 @@ function CreditCardSelection() {
         },
         {
             "id": 3,
-            "logo": "./bbLogo.png",
+            "logo": "./assets/bbLogo.png",
             "userId": "595.080.896-84",
             "bankId": "acf8c61e-fe19-4fcc-afda-ffa749d11096e",
             "bankName": "Banco do Brasil",
@@ -40,7 +40,7 @@ function CreditCardSelection() {
         },
         {
             "id": 4,
-            "logo": "./itauLogo.png",
+            "logo": "./assets/itauLogo.png",
             "userId": "595.080.896-84",
             "bankId": "fed84193-8251-4e6a-baff-56795f72c8c7",
             "bankName": "Itaú",
@@ -51,7 +51,7 @@ function CreditCardSelection() {
         },
         {
             "id": 5,
-            "logo": "./itauLogo.png",
+            "logo": "./assets/itauLogo.png",
             "userId": "595.080.896-84",
             "bankId": "fed84193-8251-4e6a-baff-56795f72c8c7",
             "bankName": "Itaú",
