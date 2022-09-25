@@ -3,15 +3,20 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 
-import Welcome from './pages/Welcome';
+import Home from './pages/Home';
 import Dashboard from './pages/Dashboard';
+import CreditCardSelection from './pages/CreditCardSelection';
 import { checkUserRegistry } from './api/user';
 
 (async () => {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: await checkUserRegistry() ? <Dashboard /> : <Welcome />,
+      element:  <Home />// await checkUserRegistry() ? <Dashboard /> : <Home />,
+    },
+    {
+      path: "/credit-card-selection",
+      element:  <CreditCardSelection />
     },
     {
       path: "/dashboard",

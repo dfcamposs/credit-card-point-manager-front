@@ -1,0 +1,37 @@
+.CreditCardSelection {
+    width: 100%;
+    height: 100%;
+    background: #F8F9FA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.credit-card-selection-page-title {
+    flex: 1;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #3F3F3F;
+}
+
+.bank-logo {
+    height: 32px;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+.credit-card-selection-button {
+    margin-top: 200px;
+    font-family: 'Montserrat';
+    width: 300px;
+    height: 50px;
+    background-color: #2E4372;
+    border: none;
+    color: white;
+  }
