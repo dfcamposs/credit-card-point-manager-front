@@ -1,0 +1,143 @@
+.Dashboard {
+    background-color: #F8F9FA;
+}
+
+.Header {
+    display: flex;
+    width: 100%;
+    height: 250px;
+    background-color: #2E4372;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.Header-Field {
+    display: flex;
+    flex-direction: column;
+}
+
+.Header-Title-Amount {
+    font-family: 'Montserrat';
+    font-size: 70px;
+    color: #F8F9FA;
+    font-weight: 800;
+    line-height: 32px;
+    margin: 0;
+    padding-bottom: 5px;
+    padding-top: 80px;
+}
+
+.Header-Text {
+    margin: 5px;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    color: #F8F9FA;
+    font-weight: 800;
+    line-height: 32px;
+    text-align: right;
+}
+
+.Header-Text-Period {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    color: #F8F9FA;
+    font-weight: 400;
+    text-align: right;
+}
+
+.Warning {
+    background-color: #EBECEB;
+    padding: 15px;
+}
+
+.Body {
+    padding: 20px;
+}
+
+.Content-Text {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    color: #3F3F3F;
+    font-weight: 400;
+}
+
+.Content-Title {
+    margin: 0px;
+    padding: 10px;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    color: #3F3F3F;
+    font-weight: 600;
+}
+
+.Credit-Cards {
+    display: flex;
+    height: 180px;
+    background-color: #EBECEB;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.Extract {
+    display: flex;
+    height: 250px;
+    background-color: #EBECEB;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.Credit-Card-Amount {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.Credit-Card-Name {
+    margin: 0px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    color: #3F3F3F;
+    font-weight: 600;
+}
+
+.Credit-Card-Legend {
+    margin: 0px;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    color: #3F3F3F;
+    font-weight: 300;
+}
+
+.Credit-Card-Point {
+    margin: 0px;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    color: #2E4372;
+    font-weight: 800;
+}
+
+.Extract-Date {
+    margin: 0px;
+    padding: 10px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    color: #3F3F3F;
+    font-weight: 800;
+}
+
+.Extract-Point {
+    margin: 0px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    color: #3F3F3F;
+    font-weight: 800;
+    text-align: right;
+}
