@@ -1,3 +1,7 @@
+# frontend based on the prototype:
+
+https://www.figma.com/file/mOsXcNjqJQKS3k4rzQlzX1/hackathon?node-id=0%3A1
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
