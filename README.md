@@ -1,4 +1,6 @@
-# Frontend Based on the Prototype:
+Credit Card Point Manager
+
+# Prototype
 
 https://www.figma.com/file/mOsXcNjqJQKS3k4rzQlzX1/hackathon?node-id=0%3A1
 
