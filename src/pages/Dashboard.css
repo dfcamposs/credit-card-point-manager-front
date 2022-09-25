@@ -4,6 +4,7 @@
 
 .Header {
     display: flex;
+    flex: 1;
     width: 100%;
     height: 250px;
     background-color: #2E4372;
@@ -12,8 +13,26 @@
     padding: 10px;
 }
 
+.Header-Filter {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    padding-right: 70px;
+    padding-top: 20px;
+}
+
+.Filter-Button {
+    background-color: #2E4372;
+    border: 0;
+}
+
+.Filter {
+    color: #F8F9FA;
+}
+
 .Header-Field {
     display: flex;
+    flex: 1;
     flex-direction: column;
 }
 
@@ -25,7 +44,7 @@
     line-height: 32px;
     margin: 0;
     padding-bottom: 5px;
-    padding-top: 80px;
+    padding-top: 40px;
 }
 
 .Header-Text {
@@ -114,6 +133,7 @@
     font-size: 14px;
     color: #3F3F3F;
     font-weight: 300;
+    padding-right: 10px;
 }
 
 .Credit-Card-Point {
@@ -140,4 +160,82 @@
     color: #3F3F3F;
     font-weight: 800;
     text-align: right;
+    padding-right: 10px;
+}
+
+.Modal {
+    position: absolute;
+    top: 35%;
+    left: 30px;
+    right: 30px;
+    bottom: 35%;
+    background-color: #F8F9FA;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(235, 236, 235, 0.8);
+}
+
+.Cancel-Button {
+    width: 150px;
+    height: 40px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    color: #3F3F3F;
+    font-weight: 800;
+    background-color: #EBECEB;
+    border-color: #EBECEB;
+    border-style: none;
+    margin: 5px;
+}
+
+.Confirm-Button {
+    width: 150px;
+    height: 40px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    color: #F8F9FA;
+    font-weight: 800;
+    background-color: #2E4372;
+    border-color: #2E4372;
+    border-style: none;
+    margin: 5px;
+}
+
+.Filter-Period {
+    display: 'flex';
+    flex-direction: 'row';
+    align-items: 'center';
+    justify-content: 'space-between'
+}
+
+.Date-Picker {
+    height: 40px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    color: #3F3F3F;
+    font-weight: 800;
+    background-color: #EBECEB;
+    border-color: #EBECEB;
+    border-style: none;
+}
+
+.Filter-Period-Legend {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    color: #3F3F3F;
+    font-weight: 300;
+    margin: 20px;
 }

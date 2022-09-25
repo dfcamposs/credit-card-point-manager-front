@@ -1,11 +1,64 @@
+import React, { useState } from 'react';
 import "@fontsource/montserrat";
+import { FaFilter } from 'react-icons/fa';
+import Modal from 'react-modal';
+import DatePicker from "react-datepicker";
 import './Dashboard.css';
 
+import "react-datepicker/dist/react-datepicker.css";
+
+
 function Dashboard() {
+    const [modalIsOpen, setIsOpen] = React.useState(false);
+    const [startDate, setStartDate] = useState(new Date());
+    const [endDate, setEndDate] = useState(new Date());
+
+    function openModal() {
+        setIsOpen(true);
+    }
+
+    function closeModal() {
+        setIsOpen(false);
+    }
 
     return (
         <div className="Dashboard">
             <div className="Header">
+                <div className="Header-Filter">
+                    <button onClick={openModal} className="Filter-Button">
+                        <FaFilter className="Filter" size={30} />
+                    </button>
+                </div>
+                <Modal
+                    isOpen={modalIsOpen}
+                    onRequestClose={closeModal}
+                    contentLabel="Filtro"
+                    className="Modal"
+                    overlayClassName="Overlay"
+                >
+                    <div>
+                        <h3 className="Content-Title">Período</h3>
+                        <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-around', padding: 10 }}>
+                            <DatePicker
+                                selected={startDate}
+                                onChange={(date) => setStartDate(date)}
+                                className="Date-Picker"
+                                dateFormat="MM/yyyy"
+                            />
+                            <p className="Filter-Period-Legend">até</p>
+                            <DatePicker
+                                selected={endDate}
+                                onChange={(date) => setEndDate(date)}
+                                className="Date-Picker"
+                                dateFormat="MM/yyyy"
+                            />
+                        </div>
+                    </div>
+                    <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+                        <button className="Cancel-Button" onClick={closeModal}>Cancelar</button>
+                        <button className="Confirm-Button" onClick={closeModal}>Aplicar</button>
+                    </div>
+                </Modal>
                 <div className="Header-Field">
                     <h1 className="Header-Title-Amount">120.000</h1>
                     <p className="Header-Text">PTS</p>
